@@ -105,6 +105,7 @@ const startGame = async (level) => {
 
 const endGame = (generator, timer) => {
     totalScoreDisplay.innerHTML = score;
+    gameDisplay.innerHTML = '';
     clearInterval(generator);
     clearInterval(timer);
     showScoreBoard();

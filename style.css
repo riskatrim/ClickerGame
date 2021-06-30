@@ -72,6 +72,7 @@ button:hover {
     flex-grow: 1;
     background-color:#000000;
     position: relative;
+    overflow: hidden;
 }
 
 #desc {
@@ -114,4 +115,20 @@ button:hover {
 }
 .triangle:focus {
     border-bottom: 60px solid rgb(255, 0, 0);
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .level-selector {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
